@@ -1,18 +1,20 @@
-import { FetchApp } from "./components/FetchApp";
-import { CounterApp } from "./components/CounterApp";
-import { FormsApp } from "./components/FormsApp";
+import { FormsComponent } from "./components/FormsComponent";
+import { HeavyCalculationComponent } from "./components/HeavyCalculationComponent";
+import { FetchComponent } from "./components/FetchComponent";
+import { CallBackComponent } from "./components/CallBackComponent";
 
 export const HooksApp = () => {
   return (
     <>
       <div className="container mt-5">
         <h1>Aplicacion de hooks</h1>
+        <FormsComponent />
         <hr />
-        <FetchApp />
+        <FetchComponent />
         <hr />
-        <CounterApp />
+        <HeavyCalculationComponent />
         <hr />
-        <FormsApp />
+        <CallBackComponent />
       </div>
     </>
   );
